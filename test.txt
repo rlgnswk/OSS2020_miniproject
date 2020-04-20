@@ -1,0 +1,19 @@
+the number of member: 9
+index: 1
+ID: 1 Name: kim Age: 25
+index: 2
+ID: 2 Name: ji Age: 30
+index: 3
+ID: 3 Name: gang Age: 31
+index: 4
+ID: 4 Name: hong Age: 11
+index: 5
+ID: 5 Name: kim Age: 25
+index: 6
+ID: 6 Name: ji Age: 30
+index: 7
+ID: 7 Name: gang Age: 31
+index: 8
+ID: 8 Name: hong Age: 11
+index: 9
+ID: 9 Name: king Age: 22
