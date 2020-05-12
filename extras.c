@@ -126,5 +126,18 @@ void search_member(Record records[], int length){
   printf("Cancel searching \n");
   }
 }
-
+void delete_all_but(Record records[], int length){
+  int t_age;
+  printf("Delete all records that are not the age.\n");
+  printf("Enter a age: ");
+  scanf("%d",&t_age);
+  for(int i=0;i<length;i++){
+    if(records[i].age!=t_age){
+        records[i].id = 0;
+        strcpy(records[i].name, "\0");
+        records[i].age = 0;
+    }
+  }
+  printf("Complete.\n");
+}
 // TODO: Add more functions to fulfill the optional requirements

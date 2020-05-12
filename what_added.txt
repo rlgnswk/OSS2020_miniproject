@@ -1,0 +1,5 @@
+I added the delete_all_but function.
+
+It performs that user input an age.
+
+And the records that are not the age will be deleted.
