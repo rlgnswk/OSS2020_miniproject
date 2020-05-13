@@ -74,10 +74,8 @@ void sort_records(Record records[], int idx){
 
 void search_member(Record records[], int length){
   printf("select search option:\n");
-  printf("0: by id \n");
-  printf("1: by name \n");
-  printf("2: by age \n");
-  printf("3: cancel \n");
+  printf("0: Search \n");
+  printf("99: cancel \n");
   printf("select update Options: ");
   int option;
   scanf("%d", &option);
@@ -86,46 +84,34 @@ void search_member(Record records[], int length){
   char name[20];
   int age;
 
-  if(option == 0){
-    printf("search id:");
-    scanf("%d", &id);
-    for(int i = 0 ; i < length ; i ++){
-      if(records[i].id == id){
-        printf("%d th ===========\n",i);
-        printf("id: %d\n",  records[i].id);
-        printf("name: %s\n",  records[i].name);
-        printf("age: %d\n\n",  records[i].age);
-      }
-    }
-  }
-  else if(option == 1){
-    printf("search name:");
+  if(option==0){
+    printf("Name: ");
     scanf("%s",name);
-    for(int i = 0 ; i < length ; i ++){
-      if(strncmp(records[i].name, name,strlen(name))==0){
-        printf("%d th ===========\n",i);
-        printf("id: %d\n",  records[i].id);
-        printf("name: %s\n",  records[i].name);
-        printf("age: %d\n\n",  records[i].age);
-      }
-    }
-  }
-  else if(option == 2){
-    printf("search age:");
+    printf("Age: ");
     scanf("%d", &age);
-    for(int i = 0 ; i < length ; i ++){
-      if(records[i].age == age){
-        printf("%d th ===========\n",i);
-        printf("id: %d\n",  records[i].id);
-        printf("name: %s\n",  records[i].name);
-        printf("age: %d\n\n",  records[i].age);
+    
+    for(int i=0;i<length;i++){
+      if(strncmp(records[i].name,name,strlen(name))==0){
+        if(records[i].age==age){
+          printf("\n******After Searching******\n");
+          printf("id: %d\n", records[i].id);
+          printf("name: %s\n", records[i].name);
+          printf("age: %d\n\n", records[i].age);
+        }
       }
+      else
+      printf("No data\n");
+    
     }
-  }
-  else{
-  printf("Cancel searching \n");
+  if(option==99) {
+    printf("Cancel searching \n");
   }
 }
+ 
+//<<<<<<< develop
+}
+ 
+=======
 void delete_all_but(Record records[], int length){
   int t_age;
   printf("Delete all records that are not the age.\n");
@@ -141,3 +127,4 @@ void delete_all_but(Record records[], int length){
   printf("Complete.\n");
 }
 // TODO: Add more functions to fulfill the optional requirements
+//>>>>>>> master
