@@ -20,7 +20,9 @@
 7.	Additional Functions
   7.1 Defragmentation
   > To optimize the memory space, defragmentation is bulit in the code.
+  
   7.2 Arrange(Sort) the order of data
   > Could sort the exist records by ID or Age
+  
   7.3 Member statistics
   > Could show the mean of age and the number of members in record.
