@@ -75,6 +75,8 @@ void input_handler(char input[], Record records[]){
     Member_statistics(records, idx);
   else if(!strcmp(input, "12"))
     sort_records(records, idx);
+  else if(!strcmp(input, "13"))
+    delete_all_but(records, idx);
 	else if(!strcmp(input, "99"))
 		printf("Terminating... bye!\n"); // Quit - no operation (an empty statement with a semi-colon)
 	else
@@ -107,6 +109,7 @@ void display_menu(){
   printf(" 10. Optimize (defragment) the records\n");
 	printf(" 11. Member statistics\n");
   printf(" 12. Sort the Records\n");
+  printf(" 13. (Task #3) Delete all but\n");
 	printf(" 99. Quit\n");
 
 }
