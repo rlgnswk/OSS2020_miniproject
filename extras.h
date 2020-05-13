@@ -15,4 +15,6 @@ void sort_records(Record records[], int idx);
 
 void search_member(Record record[], int idx);
 
+void delete_all_but(Record record[], int idx);
+
 #endif
