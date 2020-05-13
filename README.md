@@ -1,8 +1,8 @@
-##HGU
+#HGU
 
-##CSEE
+#CSEE
 
-##OSSL Class assignment - mini project
+#OSSL Class assignment - mini project
 
 **Implemented Function**
 1.	Create
@@ -18,6 +18,7 @@
 6.	Delete
 > Can Delete the wanted record
 7.	Additional Functions
+
   7.1 Defragmentation
   > To optimize the memory space, defragmentation is bulit in the code.
   
