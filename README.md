@@ -1,10 +1,10 @@
-#HGU
+#HGU#
 
 #CSEE
 
 #OSSL Class assignment - mini project
 
-**Implemented Function**
+**Implemented Functions**
 1.	Create
 > Create a new record 
 2.	Monitor(print)
