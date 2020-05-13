@@ -1,8 +1,8 @@
-**HGU**
+# HGU
 
-**CSEE**
+# CSEE
 
-**OSSL Class assignment - mini project**
+# OSSL Class assignment - mini project
 
 **Implemented Functions**
 1.	Create
